@@ -1,0 +1,293 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%; }
+
+/* Font
+---------------------------------------------*/
+.uppercase {
+  text-transform: uppercase; }
+
+/**************************************/
+body {
+  background-color: white;
+  /**************************************/
+  /* リンク */
+  /* クリック時のリンク */ }
+  body header {
+    background-color: white;
+    max-width: 1000px;
+    margin: 0 auto; }
+    body header h1 {
+      display: flex;
+      justify-content: center; }
+      body header h1 img {
+        width: 200px; }
+    body header #indexbar .menu_box {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-between;
+      justify-content: space-between; }
+      body header #indexbar .menu_box img {
+        width: 157px; }
+    body header #indexbar .yellowbar {
+      width: 100%;
+      background-color: #fffbc2;
+      height: 27px; }
+    body header #indexbar .contentsbar {
+      width: 100%;
+      background-color: #212e67;
+      height: 27px; }
+      body header #indexbar .contentsbar .contents_menu {
+        float: left;
+        margin-right: 10px;
+        padding-left: 10px;
+        border-left: 1px solid #999;
+        height: 27px; }
+        body header #indexbar .contentsbar .contents_menu a {
+          text-decoration: none; }
+        body header #indexbar .contentsbar .contents_menu p {
+          font-size: 18px;
+          margin: 0;
+          color: white; }
+    body header #indexbar .menu:hover img {
+      border-bottom: 4px solid #212e67;
+      opacity: .5; }
+  body #top_main h2 {
+    font-size: 25px;
+    font-family: "Noto Sans, Noto Sans CJK JP";
+    font-weight: lighter;
+    color: #212e67;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 15px; }
+  body #top_main h3 {
+    font-size: 18px;
+    font-family: "Noto Sans, Noto Sans CJK JP";
+    font-weight: lighter;
+    color: #212e67;
+    margin-bottom: 40px; }
+  body #top_main .top_pic {
+    background: url("../images/imagepic.png");
+    height: 350px;
+    background-repeat: no-repeat;
+    max-width: 1000px;
+    position: relative;
+    margin: 40px auto; }
+    body #top_main .top_pic .message_box {
+      position: absolute;
+      width: 1000px;
+      top: 30%; }
+      body #top_main .top_pic .message_box p {
+        font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3";
+        font-size: 23px;
+        line-height: 60px;
+        color: #212e67;
+        text-align: center; }
+  body #top_main .greeting_box {
+    background-color: #e8f5fc;
+    height: 430px;
+    width: 100%;
+    margin-bottom: 60px; }
+    body #top_main .greeting_box span {
+      font-size: 18px;
+      font-family: "Noto Sans, Noto Sans CJK JP";
+      font-weight: lighter;
+      color: #212e67;
+      display: flex;
+      align-items: center;
+      width: 250px;
+      margin: 0 auto;
+      margin-bottom: 40px; }
+    body #top_main .greeting_box span:before,
+    body #top_main .greeting_box span:after {
+      border-top: 1px solid;
+      content: "";
+      display: inline;
+      /* for IE */
+      flex-grow: 1; }
+    body #top_main .greeting_box span:before {
+      margin-right: 0.5em; }
+    body #top_main .greeting_box span:after {
+      margin-left: 0.5em; }
+    body #top_main .greeting_box p {
+      font-size: 16px;
+      color: #4d4d4d;
+      max-width: 720px;
+      margin: 0 auto; }
+    body #top_main .greeting_box .widebar_top, body #top_main .greeting_box .widebar_bottom {
+      background: url("../images/widebar.png");
+      height: 20px;
+      margin: 0 auto; }
+    body #top_main .greeting_box .widebar_top {
+      margin-bottom: 60px; }
+    body #top_main .greeting_box .widebar_bottom {
+      margin-top: 90px; }
+  body #top_main .soudan_box {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #212e67;
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 60px; }
+    body #top_main .soudan_box .soudan_title {
+      position: absolute;
+      left: 0;
+      /* 5 */
+      right: 0;
+      /* 6 */
+      margin: auto;
+      top: -20px;
+      background-color: white;
+      width: 200px;
+      /* 8 */ }
+    body #top_main .soudan_box .intro {
+      margin: 0 auto;
+      margin-top: 60px;
+      font-size: 25px;
+      line-height: 55px;
+      max-width: 720px;
+      margin-bottom: -30px; }
+    body #top_main .soudan_box .contact_row {
+      display: flex;
+      max-width: 720px;
+      margin: 40px auto; }
+      body #top_main .soudan_box .contact_row img {
+        width: 80%; }
+    body #top_main .soudan_box .target_title, body #top_main .soudan_box .example_title, body #top_main .soudan_box .forpatients_title {
+      background: url("../images/shortbar.png");
+      background-repeat: no-repeat;
+      width: 720px;
+      margin: 0 auto;
+      margin-top: 60px; }
+      body #top_main .soudan_box .target_title h3, body #top_main .soudan_box .example_title h3, body #top_main .soudan_box .forpatients_title h3 {
+        top: -20px;
+        background-color: white;
+        width: 200px;
+        margin: 0 auto; }
+      body #top_main .soudan_box .target_title .forpatients_titlep, body #top_main .soudan_box .example_title .forpatients_titlep, body #top_main .soudan_box .forpatients_title .forpatients_titlep {
+        width: 400px; }
+    body #top_main .soudan_box p {
+      font-size: 18px;
+      color: black;
+      max-width: 720px;
+      margin: 60px auto; }
+    body #top_main .soudan_box .example_row {
+      display: flex;
+      max-width: 720px;
+      margin: 0 auto; }
+      body #top_main .soudan_box .example_row p {
+        margin-bottom: 10px; }
+      body #top_main .soudan_box .example_row img {
+        width: 80%; }
+      body #top_main .soudan_box .example_row .example_answer {
+        font-size: 16px;
+        color: black;
+        width: 200px;
+        text-align: left;
+        margin: 0 auto; }
+    body #top_main .soudan_box .hr {
+      border-top: 1px solid #212e67;
+      width: 720px;
+      margin: 100px auto; }
+    body #top_main .soudan_box .forpatients .contact_row {
+      display: flex;
+      max-width: 720px;
+      margin: 40px auto; }
+      body #top_main .soudan_box .forpatients .contact_row img {
+        width: 80%; }
+  body #top_main #to_top {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 60px; }
+    body #top_main #to_top .top_innerbox {
+      width: 60px;
+      margin-left: auto; }
+    body #top_main #to_top img {
+      width: 100%; }
+  body .relatedlink {
+    background-color: #f3fafd;
+    width: 100%; }
+    body .relatedlink .relatedlink_innerbox {
+      max-width: 720px;
+      display: flex;
+      margin: 0 auto;
+      padding: 60px 0; }
+      body .relatedlink .relatedlink_innerbox .link_img {
+        width: 30%; }
+        body .relatedlink .relatedlink_innerbox .link_img img {
+          width: 50%; }
+      body .relatedlink .relatedlink_innerbox .link_li {
+        margin-left: 20px; }
+        body .relatedlink .relatedlink_innerbox .link_li ul {
+          list-style: disc; }
+          body .relatedlink .relatedlink_innerbox .link_li ul li {
+            font-size: 16px;
+            height: 25px;
+            color: #212e67;
+            text-decoration-color: #212e67; }
+  body footer {
+    background-color: #fffbc2;
+    width: 100%;
+    margin: 0 auto; }
+    body footer .footer_innerbox {
+      max-width: 720px;
+      margin: 0 auto; }
+      body footer .footer_innerbox .footer_menu {
+        display: flex;
+        padding: 40px 0; }
+        body footer .footer_innerbox .footer_menu img {
+          width: 70%;
+          min-width: 100px; }
+      body footer .footer_innerbox .bottom_row {
+        position: relative;
+        display: flex; }
+        body footer .footer_innerbox .bottom_row .contact {
+          background-color: rgba(255, 255, 255, 0.5);
+          border-radius: 25px;
+          padding: 20px;
+          width: 40%; }
+          body footer .footer_innerbox .bottom_row .contact .footer_hr {
+            margin: 0 auto;
+            border-top: 1px solid #4d4d4d;
+            margin: 10px 0; }
+          body footer .footer_innerbox .bottom_row .contact p {
+            font-size: 16px;
+            color: #4d4d4d;
+            margin: 0; }
+          body footer .footer_innerbox .bottom_row .contact .small_letter {
+            font-size: 14px;
+            color: #4d4d4d; }
+          body footer .footer_innerbox .bottom_row .contact img {
+            max-width: 50%;
+            min-width: 150px;
+            margin-top: 10px; }
+        body footer .footer_innerbox .bottom_row .copyright {
+          position: absolute;
+          bottom: 20px;
+          margin-left: 30px;
+          font-size: 14px;
+          color: #4d4d4d; }
+    body footer .footer_illust {
+      max-width: 1000px;
+      margin: 0 auto; }
+      body footer .footer_illust .footer_illust_innerbox {
+        display: flex;
+        width: 20%;
+        margin-left: auto; }
+        body footer .footer_illust .footer_illust_innerbox img {
+          width: 50%; }
+  body a:link {
+    color: #212e67; }
+  body a:visited {
+    /* 既に見たリンク */
+    color: #4d4d4d;
+    text-decoration: none; }
+  body a:active {
+    color: #fffbc2; }
+  body a:hover {
+    /* カーソルが上にある時のリンク */
+    color: #4d4d4d;
+    text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */

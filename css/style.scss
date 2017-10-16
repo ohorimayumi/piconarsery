@@ -1,0 +1,454 @@
+@import "compass";
+@charset "utf-8";
+
+html {
+font-size: 62.5%;
+}
+
+
+@mixin fontsize($size: 24, $base: 10) {
+font-size: $size + px;
+font-size: ($size / $base) * 1rem;
+}
+
+$ja_font : "小塚ゴシック Pro", "ヒラギノ角ゴ", "HiraMinProN-W3", メイリオ, Verdana, sans-seri,"ＭＳ Ｐゴシック" ;
+$blue : #036ea5;
+$navy : #4c6681;
+$brown: #604c3f;
+$yellow : #ffffd7;
+$highlight:#d6be00;
+
+
+/* Font
+---------------------------------------------*/
+.uppercase  { text-transform : uppercase ; }
+
+
+/**************************************/
+body{
+    background-color:white;
+
+
+header{
+  background-color: white;
+  max-width: 1000px;
+  margin: 0 auto;
+
+#companylogobox{
+  display: flex;
+ justify-content: center;
+}
+
+#maintitle{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+  h1{
+    display: flex;
+    justify-content: center;
+    img{
+      width:200px;
+    }}
+
+#indexbar{
+
+ .menu_box{
+   display: -webkit-flex;
+   display: flex;
+   -webkit-justify-content: space-between;
+   justify-content: space-between;
+
+
+   img{
+     width:157px;
+    }//img
+
+
+  }//menu_box
+
+  .yellowbar{
+    width: 100%;
+    background-color: $yellow;
+    height:27px;
+      }
+
+  .contentsbar{
+    width: 100%;
+    background-color: $navy;
+    height:27px;
+      .contents_menu{
+        float: left;
+        margin-right:10px;
+        padding-left:10px;
+        border-left:1px solid #999;
+        height:27px;
+
+          a{
+              text-decoration: none;
+          }
+            p{
+              font-size: 18px;
+              margin: 0;
+              color: white;
+            }
+      }//contents_menu
+  }//contentsbar
+
+.menu:hover img{
+    border-bottom: 4px solid $navy;
+    opacity: .5;
+    }
+
+
+}//indexbar
+}//header
+/**************************************/
+//top_main
+#top_main{
+
+  h2{
+    font-size: 25px;
+    font-family: "Noto Sans, Noto Sans CJK JP";
+    font-weight: lighter;
+    color: $navy;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 15px;
+      }
+
+  h3{
+        font-size: 18px;
+        font-family: "Noto Sans, Noto Sans CJK JP";
+        font-weight: lighter;
+        color: $navy;
+        margin-bottom: 40px;
+
+      }
+
+
+
+  .top_pic{
+    background:url("../images/imagepic.png");
+    height:350px;
+    background-repeat: no-repeat;
+    max-width: 1000px;
+    position: relative;
+    margin: 40px auto;
+
+    .message_box{
+      position: absolute;
+      width: 1000px;
+      top:30%;
+
+        p{
+
+        font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3";
+        font-size: 23px;
+        line-height: 60px;
+        color: $navy;
+        text-align: center;
+        }
+      }
+    }//.top_pic
+    .greeting_box{
+      background-color: $baseblue;
+      height:430px;
+      width:100%;
+      margin-bottom: 60px;
+
+      span{
+        font-size: 18px;
+        font-family: "Noto Sans, Noto Sans CJK JP";
+        font-weight: lighter;
+        color: $navy;
+        display: flex;
+        align-items: center;
+        width: 250px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+      }
+
+        span:before,
+        span:after {
+            border-top: 1px solid;
+            content: "";
+            display: inline; /* for IE */
+            flex-grow: 1;
+          }
+
+        span:before {
+            margin-right: 0.5em;
+        }
+
+        span:after {
+            margin-left: 0.5em;
+        }
+
+
+      p{
+        font-size: 16px;
+        color: $gray;
+        max-width: 720px;
+        margin: 0 auto;
+      }
+
+    .widebar_top, .widebar_bottom{
+
+      background:url("../images/widebar.png");
+      height:20px;
+      margin: 0 auto;
+
+      }
+    .widebar_top{
+      margin-bottom: 60px;
+      }
+    .widebar_bottom{
+      margin-top: 90px;
+    }
+  }//.greeting_box
+
+    .soudan_box{
+      max-width:1000px;
+      margin: 0 auto;
+      border: 1px solid $navy;
+      position: relative;
+      text-align: center;
+      margin-top: 100px;
+      padding-bottom:60px;
+
+      .soudan_title{
+        position: absolute;
+        left: 0;            /* 5 */
+        right: 0;           /* 6 */
+        margin: auto;
+        top:-20px;
+        background-color:white;
+        width:200px;  /* 8 */
+            }
+
+        .intro{
+          margin: 0 auto;
+          margin-top:60px;
+          font-size:25px;
+          line-height: 55px;
+          max-width: 720px;
+          margin-bottom: -30px;
+
+          }
+        .contact_row{
+          display: flex;
+          max-width:720px;
+          margin: 40px auto;
+
+          img{
+            width:80%;
+
+          }
+        }//.contact_row
+
+        .target_title, .example_title, .forpatients_title{
+          background: url("../images/shortbar.png");
+          background-repeat: no-repeat;
+          width: 720px;
+          margin: 0 auto;
+          margin-top:60px;
+
+          h3{
+            top:-20px;
+            background-color:white;
+            width:200px;
+            margin: 0 auto;
+          }
+
+          .forpatients_titlep{
+            width: 400px;
+          }
+        }//.target_title. .example_title.forpatients_title
+
+        p{
+          font-size: 18px;
+          color: black;
+          max-width: 720px;
+          margin: 60px auto;
+        }
+
+        .example_row{
+          display: flex;
+          max-width: 720px;
+          margin: 0 auto;
+
+          p{ margin-bottom: 10px; }
+
+          img{ width: 80%; }
+
+          .example_answer{
+            font-size: 16px;
+            color: black;
+            width: 200px;
+            text-align: left;
+            margin: 0 auto;
+          }//.example_answer
+        }//.example_row
+
+        .hr{
+          border-top:1px solid $navy;
+          width:720px;
+          margin: 100px auto;
+        }
+
+        .forpatients{
+
+        .contact_row{
+          display: flex;
+          max-width:720px;
+          margin: 40px auto;
+
+          img{
+            width:80%;
+          }
+        }//.contact_row
+        }//forpatients
+    }//soudan_box
+  #to_top{
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 60px;
+    .top_innerbox{
+      width: 60px;
+      margin-left: auto;
+    }
+    img{
+      width: 100%;
+    }
+  }
+
+
+    }//#top_main
+
+  .relatedlink{
+    background-color: $lightblue;
+    width: 100%;
+    .relatedlink_innerbox{
+      max-width: 720px;
+      display: flex;
+      margin: 0 auto;
+      padding:60px 0;
+
+      .link_img{
+        width: 30%;
+        img{
+          width: 50%;
+        }
+      }//.link_img
+
+      .link_li{
+        margin-left:20px;
+      ul{
+
+        list-style:disc;
+      li{
+        font-size: 16px;
+        height:25px;
+        color:$navy;
+        text-decoration-color: $navy;
+
+      }}}//.link_li
+    }
+  }//relatedlink
+
+
+footer{
+    background-color: $yellow;
+    width: 100%;
+    margin: 0 auto;
+
+    .footer_innerbox{
+      max-width: 720px;
+      margin: 0 auto;
+
+      .footer_menu{
+        display: flex;
+        padding:40px 0;
+
+        img{
+          width: 70%;
+          min-width: 100px;
+        }
+      }
+
+    .bottom_row{
+      position: relative;
+      display: flex;
+
+        .contact{
+        background-color: rgba(255,255,255,0.5);
+        border-radius: 25px;
+        padding: 20px;
+        width: 40%;
+
+
+        .footer_hr{
+          margin:0 auto;
+          border-top: 1px solid $gray;
+          margin: 10px 0;
+        }
+        p{
+          font-size: 16px;
+          color:$gray;
+          margin:0;
+                  }
+        .small_letter{
+          font-size: 14px;
+          color:$gray;
+        }
+        img{
+          max-width:50%;
+          min-width: 150px;
+          margin-top: 10px;
+        }
+      }//.contact
+
+      .copyright{
+        position: absolute;
+        bottom:20px;
+        margin-left:30px;
+        font-size:14px;
+        color:$gray;
+      }
+    }//.bottom_row
+}//footer_innerbox
+
+    .footer_illust{
+    max-width: 1000px;
+    margin: 0 auto;
+
+      .footer_illust_innerbox{
+        display: flex;
+        width: 20%;
+        margin-left: auto;
+
+        img{
+         width: 50%;
+
+          }
+        }
+      }//footer_illust
+
+}//footer
+
+
+a:link { color: $navy;}   /* リンク */
+a:visited {                 /* 既に見たリンク */
+  color: $gray;
+  text-decoration: none     /* 下線を消す */
+}
+a:active { color: $yellow } /* クリック時のリンク */
+a:hover {                   /* カーソルが上にある時のリンク */
+  color: $gray;
+  text-decoration: none     /* 下線を消す */
+}
+
+}//body
